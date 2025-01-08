@@ -1,0 +1,553 @@
+/* Project 1 starter template for Web and Time-Based Design [DESN1021-Pro1#1-739ad15c1d5ee35bb0973f96e6b5095c]. Do not delete this comment */
+
+/* CSS starting template for Project 1
+
+A starting template only - additions and customisation needed - layout, type and colour changes expected.
+
+Colours are intentionally bad to help identify individual structural elements and inspire you to do something much better. Comment existing colours out as you go and/or delete and replace with your own appropriate RGB or Hex codes
+
+Paste your colour scheme values or codes here to have them on hand as you work through your styling.
+
+Colours:
+
+
+
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/*define character set for CSS*/
+
+@charset "utf-8";
+
+
+/*Basic browser default resets */
+
+html, body{
+
+  margin: 2;
+  padding: 0;
+
+}
+
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid/ Element Layout
+- Base/ global Styles
+- Typography
+- Links/ Navigation
+
+REFORMATTING STYLES GOES HERE */
+.selfie{
+width:255px;height:250px;  
+    position:relative; left:350px; bottom: -25px;
+}
+.name{
+  position:relative; top:-8px
+}
+.whiteline{
+  background: white; position:relative; top:-22px;
+}
+.designer{
+  position:relative; top:-92px; font-style: regular;
+}
+.centerstyle{
+  position:relative; ;top:-117px; font-size: 15pt; color:white;
+}
+
+.border1{
+  position:relative; top: -70px;
+}
+
+.leftalil{
+    padding-left:16px
+}
+.section1{
+    height: 55em;
+}
+
+.firsth1{
+    text-align: left; position:relative; left: 30px; top: 30px;
+}
+
+.asidebig{
+    height: 16em;
+}
+.description{
+    
+    margin-right: 30px;
+    margin-left: 14px;
+     position:relative; bottom: -65px; 
+     font-size: 22px;
+     color:#322d33;
+}
+.newaside{
+    color:#ffd096; height: 42em;
+}
+.newheader{
+position: relative; top: -259px; background-color: #ffd096; height: 14em;
+}
+.newheaderp{
+    margin-right: 30px;
+  margin-left: 30px;
+   font-size: 22px;
+}
+.newheaderul{font-size: 22px; color:#322d33; list-style-type:square
+}
+.newheaderborder{
+    position:relative; width:960;
+}
+.educationheader{position: relative; top: -14.4em; background-color: #fff9df; height: 42em; width:960px;}
+.educationh1{position:relative; top:-22px; color: #322d33;}
+.educationhr{position:relative; top:-12px; height: 7px; width: 10.5em;}
+.tyndale{text-align: left; margin-left: 34px; color: #322d33; position:relative; top:-2.7em;}
+.tyndate{text-align: left; margin-left: 37px; color: #322d33; position:relative; top: -109px; left: 6px;  font-size: 22px; font-style: italic;}
+.diploma{text-align: left; margin-left: 37px; color: #322d33; position:relative; top: -126px; left: 6px;  font-size: 22px; font-style: italic;}
+.acu{text-align: left; margin-left: 34px; color: #322d33; position:relative; top:-4.3em;}
+.acudate{text-align: left; margin-left: 37px; color: #322d33; position:relative; top: -159px; left: 6px;  font-size: 22px; font-style: italic;}
+.acudegree{text-align: left; margin-left: 37px; color: #322d33; position:relative; top: -176px; left: 6px;  font-size: 22px; font-style: italic;}
+.wsu{text-align: left; margin-left: 34px; color: #322d33; position:relative; top:-5.9em;}
+.wsudate{text-align: left; margin-left: 37px; color: #322d33; position:relative; top: -203px; left: 6px;  font-size: 22px; font-style: italic;}
+.wsup{text-align: left; margin-left: 37px; color: #322d33; position:relative; top: -221px; left: 6px;  font-size: 22px; font-style: italic;
+}
+.eduborder{ position:relative; top: -20em;}
+.finheader{position: relative; top: -18.3em; background-color: #322d33; height: 50em; width:960px}
+.employmentstart{position:relative; top:-122px; color: #DBE3D4}
+.employhr{position:relative; top:-12px; height: 7px; width: 10.5em;  background-color: #DBE3D4;}
+.crocs{text-align: left; margin-left: 34px; color: #DBE3D4; position:relative; top:-4.9em;}
+.crocdate{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -179px; left: 6px;  font-size: 22px; font-style: italic;}
+.crocwhat{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -196px; left: 6px;  font-size: 22px; font-style: italic;}
+.crocsponsibility{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -213px; left: 6px;  font-size: 22px; font-style: italic;}
+.ezmath{text-align: left; margin-left: 34px; color: #DBE3D4; position:relative; top:-6.5em;}
+.ezdate{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -229px; left: 6px;  font-size: 22px; font-style: italic;}
+.ezdesc{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -246px; left: 6px;  font-size: 22px; font-style: italic;}
+.ezspility{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -263px; left: 6px;  font-size: 22px; font-style: italic;}
+.artcomms{text-align: left; margin-left: 34px; color: #DBE3D4; position:relative; top:-8.1em;}
+.artp{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -279px; left: 6px;  font-size: 22px; font-style: italic;}
+.arty{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -296px; left: 6px;  font-size: 22px; font-style: italic;}
+.artwha{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -311px; left: 6px;  font-size: 22px; font-style: italic;}
+.artcool{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -323px; left: 6px;  font-size: 22px; font-style: italic;}
+.chicken{text-align: left; margin-left: 34px; color: #DBE3D4; position:relative; top:-9.8em;}
+.chickdate{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -329px; left: 6px;  font-size: 22px; font-style: italic;}
+.chickwha{text-align: left; margin-left: 37px; margin-right: 37px;color: #DBE3D4; position:relative; top: -346px; left: 6px;  font-size: 22px; font-style: italic;}
+.chicks{text-align: left; margin-left: 37px; color: #DBE3D4; position:relative; top: -363px; left: 6px;  font-size: 22px; font-style: italic;}
+/* Grid/ Element Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.container {
+  width: 960px;
+
+  margin: auto; /*centers the container in the browser window */
+
+  overflow: hidden; /*defines how the container deals with its content – in this case it ensures the container height as a coloured background will be visible if not covered by other elements */
+  background-color: #322d33;
+
+}
+
+.vertical {
+  height: 210px;
+  border-right: 10px solid #322d33;
+  position: absolute;
+  left: 50%;
+}
+.vertical1 {
+    height: 210px;
+    border-right: 10px solid #322d33;
+    position: absolute;
+    left: 50%;
+    position:relative; left: -20px; top:-210px;
+  }
+
+  .skillz{
+    text-align: left; position:relative; left: 20px; top: -250px;
+  }
+.verticalskills {
+  height: 360px;
+  border-right: 10px solid #322d33;
+  position: absolute;
+  left: 50%;
+}
+.verticalskills1 {
+    height: 360px;
+    border-right: 10px solid #322d33;
+    position: absolute;
+    left: 50%;
+    position:relative; left: -20px; top:-390px;
+}
+.csshtml{
+    text-align: left; margin-left: 20px; position:relative; top: -710px; font-size: 33px; color: #322d33;
+}
+.header2 {
+  width: 960px;
+ margin: auto;
+  background-color: #85b5b5;
+  float: left; /*If in doubt - float left - this makes elements stake toward the topleft of a container element - like a game of reverse Tetras */
+
+}
+
+
+header {
+  width: 960px;
+  height: 598px; /*Notice the width is the same as our container – this is not required for full length elements but it’s a good habit to do it because its required if you want elements to sit next to each other like columns */
+ /*height not needed - you can also let the amount of content define an element's height */
+ margin: auto;
+  background-color: #85b5b5;
+  float: left; /*If in doubt - float left - this makes elements stake toward the topleft of a container element - like a game of reverse Tetras */
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #322d33;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffd096;
+  color: #322d33;
+}
+
+nav{
+  width: 960px;
+  margin: auto;
+  float: left;
+  background-color: white;
+ 
+
+}
+
+/*pay particular attention to the pixel sizes defined between the section and aside – to form columns
+using 960.gs grid structure we are working with multiples of 80 across the 960 total, with 10px margins.
+Change to suit your layout plan.
+*/
+
+
+section {
+  width: 320px;
+
+/*Depending on the scenario between your background colour arrangements it may be better to use padding instead of margins to set gutter spacing.
+Either way, spacing to be applied to a whole element is better achieved by adding it to the element itself rather than the type content that goes
+inside it. Both approaches will work but be aware of alignment
+conflicts between padding applied to type adding to padding and margins applied to parent elements.*/
+  margin-left: 10x;
+  margin-right: 0px;
+
+  float: left;
+  background-color: #ffd096;
+}
+
+
+
+aside{
+  width: 640px; 
+  margin-left: 0px;
+  margin-right: 00px;
+  float: left;
+  background-color: #ffd096;
+
+}
+
+
+
+
+footer {
+  width: 960px;
+  padding-top: 30pt;
+
+  float: left;
+  background-color: green;
+
+
+ clear: both; /* re floats - final element in a stack should clear floats so nothing beyond it can enter the stack - No floating elements allowed on either the left or the right side */
+
+}
+
+
+
+
+
+
+
+/* Base/ global Styles
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Tags/ selectors and their IDs or classes can be targeted or repeated in your CSS –
+repeating the same style attributes is not best practice but repeating selectors to
+break up your organization up is perfectly fine.
+This is why you might see the body and others dealt with more than once.
+*/
+
+
+
+
+/* REMOVE to find problems
+* {
+  outline: 1px solid red;
+}
+*/
+
+body {
+
+  min-height: 100%;
+  font-size: 12pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+}
+
+
+
+
+
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, .subhead {
+
+
+}
+
+/* this is ur line */
+hr {
+  height: 2px;
+  background: #322d33;
+  width: 500px;
+  position: left;
+  border: none;
+}
+
+h1 {
+  font-size: 58px;
+  color: #322d33;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  letter-spacing: 0.9pt;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 45px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  letter-spacing: 0.9pt;
+  text-transform: uppercase;
+}
+
+.brmedium {
+  display: block;
+  margin-bottom: 5px;
+}
+
+h3 {
+
+  font-weight: regular;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  border-radius: 3px;
+  letter-spacing: 0.9pt;
+  text-transform: uppercase;
+}
+
+h4 {
+  
+  color: white;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+img {
+  
+
+}
+
+.br {
+  display: block;
+  margin-bottom: 0em;
+}
+
+.brsmall {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.brbig {
+  display: block;
+  margin-bottom: 8em;
+}
+
+.hrsmall {
+  height: 2px;
+  background: #322d33;
+  width: 200px;
+  position: left;
+}
+
+.hrbig {
+  height: 26px;
+  background: #322d33;
+
+  position: left;
+}
+.bar1 {
+    height: 26px;
+    background: #322d33;
+    position: relative; bottom: -123px; left: 0.9em; width: 35%;
+    position: left;
+  }
+  
+.bar2 {
+    height: 26px;
+    background: #322d33;
+    position: left;
+  position: relative; bottom: -141px; left: 0.9em; width: 50%;
+}
+.bar2 {
+    height: 26px;
+    background: #322d33;
+    position: left;
+  position: relative; bottom: -141px; left: 0.9em; width: 50%;
+}
+.bar3 {
+    height: 26px;
+    background: #322d33;
+    position: left;
+    position: relative; bottom: -157px; left: 0.9em; width: 70%;
+}
+.bar4 {
+    height: 26px;
+    background: #322d33;
+    position: left;
+    position: relative; bottom: -174px; left: 0.9em; width: 80%;
+}
+
+.bar5 {
+    height: 26px;
+    background: #322d33;
+    position: left;
+    position: relative; bottom: -190px; left: 0.9em; width: 50%;
+}
+
+.bar5 {
+    height: 26px;
+    background: #322d33;
+    position: left;
+    position: relative; bottom: -206px; left: 0.9em; width: 40%;
+}
+footer {
+  font-size: 9pt;
+  font-style: italic;
+  line-height: 12pt;
+  text-align: center;
+  padding-top: 30pt;
+
+
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.dot2 {
+  height: 14px;
+  width: 14px;
+  background-color: #9e9e9c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+p.subhead {
+
+  color: #DBE3D4;
+  font-size: 16pt;
+  padding-left: 150px;
+  padding-right: 10px;
+  text-align: right;
+  position:relative; left:10px;
+}
+
+
+
+
+
+
+/* Links/ navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*global link treatment */
+
+a {
+  color: #1EAEDB; }
+
+a:hover {
+  color: #0FA0CE; }
+
+
+/*Main Navigation treatment */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+
+nav ul li {
+
+  float: left; /*change list to show links as a horizontal menu */
+}
+
+
+nav ul li a{
+
+  display: block; /*display links as a block of space or colour */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*remove link underline */
+
+}
+
+/* Change the link color to #E89EFA on hover */
+nav ul li a:hover {
+  background-color: #DBE3D4;
+}
+
+
+/* Project 1 starter template for Web and Time-Based Design [DESN1021-Pro1#1-739ad15c1d5ee35bb0973f96e6b5095c]. Do not delete this comment */

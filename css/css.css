@@ -1,0 +1,908 @@
+/* video stuff*/
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: relative;
+  top: -345px;
+  right: -670px;
+  width: 230px;
+}
+
+.top-left {
+  position: relative;
+  top: -470px;
+  right: -880px;
+  width: 230px;
+}
+
+.top-right {
+  position: relative;
+  top: -600px;
+  right: -1040px;
+  width: 230px;
+}
+
+.bottom-right {
+  position: relative;
+  top: -222px;
+  right: -420px;
+  width: 230px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.midheader {
+  position: relative;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: 50%;
+  top:20px;
+ left: 23.5%;
+ word-break: keep-all;
+}
+
+.borderthing {
+  position: absolute;
+  left: 9%;
+  height:270px;
+  width:10px;
+}
+
+.title{
+  font-size:60px; word-break: keep-all;
+}
+
+.title2{
+  font-size:50px; word-break: keep-all;
+}
+
+.borderthing2 {
+  left: 50px;
+  position:absolute;
+  bottom:-20px;
+}
+
+.leftheader {
+  position: relative;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: 55%;
+  top:30px;
+ left: 33.5%;
+}
+
+.leftheader2 {
+  position: relative;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right:20%;
+  top:20px;
+ left: 78px;
+}
+body {
+  overflow-x: hidden;
+}
+/*prtfolio*/
+.selfie {
+  width:20%;
+}
+.selfie2{
+  width:100%;
+  position: relative;
+  top: 0px;
+}
+.aboutme {
+  background-color: #ffd096;
+}
+
+.nowrap {
+  white-space: nowrap;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.educationheader {
+  background-color: #fff9df;
+}
+
+.employmentheader {
+  background-color: #322d33;
+  color:white;
+}
+.resumemargin{
+  margin: 30px;
+  font-size:20px;
+}
+.lefttext{
+  text-align:left;
+}
+.centertext{
+  text-align: center;
+  position:ce
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.marginlefter{
+  margin-left:20px;
+}
+.marginleftest{
+  margin-left:2.7em;
+}
+#myImg:hover {opacity: 0.7;}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: ;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+.modal-content, #caption {  
+  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*CDN*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 0px;  
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#blacktext {
+  color:#212529;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.smolline{
+  width:20%;
+}
+h1 {
+  font-size: 80px;
+  word-break: break-all;  f
+  ont-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  
+}
+.h1smaller{
+  font-size: 30px;
+}
+
+.brsmall { 
+  display: block; 
+  margin-bottom: 55px; 
+} 
+.brsmaller { 
+  display: block; 
+  margin-bottom: 25px; 
+} 
+
+.brsmallest { 
+  display: block; 
+  margin-bottom: 11px; 
+} 
+
+.leftalil{
+  padding-left:16px;
+}
+
+.navbar-format{
+  padding-bottom: 20px;
+  padding-left:28px;
+}
+
+.lefter{
+  position:relative; left:-20px;
+}
+.marginrighto{
+  margin-right:73%;}
+.wideimage{
+  width:100%;
+  
+}
+.arrowlink{width:135px; position:relative; left: -5px;}
+.dwhite{
+  color:white;
+}
+.row {
+  margin: 10px -16px;
+}
+
+.topnavleft
+{
+  align-self: flex-end;
+  left: 1000px;
+  display: flex;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contenti {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+/*video background is helped by bootstrap*/
+#bgVideo {
+  position: fixed;
+  left: -100px;
+  top: 0px;
+  min-height: 100%;
+  width: 1750px;
+}
+#directoryvid {
+  width:47%;
+  min-width: 400px;
+  height: 395px;
+}
+/*ur text*/
+#openintro {
+  margin-right: 100px;
+
+}
+
+.contactme {
+  text-align: left;
+  font-size: 24px ;
+  position:relative;
+  left: 0%;
+  color:#212529;
+}
+.middle {
+  position:fixed; 
+  float: left;
+  left: 12%;
+  top: 30%;
+}
+
+p{  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+a{
+  color: rgb(178, 178, 178);
+  text-decoration: none;
+}
+z
+
+.ablack{
+  
+  color: #322d33;
+  text-decoration: none;
+  font-size: 20px;
+margin-right:5em;
+margin-left:3.4em;
+}
+
+.lefter{
+  position:relative; left:2.65em;
+}
+
+.leftery{
+  position:relative; left:-1em;
+}
+
+
+hr {
+height:5px;
+width: 50%;
+background-color: black;
+color: black;
+
+
+}
+
+
+.courier { 
+  font-family: 'Courier New', Courier, monospace;;
+}
+.contactimage { 
+  width: 80%; 
+  height: 260px; 
+  object-fit: cover;
+  object-position: 25% 25%; 
+  } 
+  
+
+.h1new {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  margin: 20px;
+  color: black;
+  font-style: bold;
+}
+h2 {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2style {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.centre{
+  text-align:center;
+  left:50%;
+  width:100%;
+}
+/* aesthetics  */
+
+.directmid{
+  position:relative;
+  text-align: center;
+}
+
+.middleofpage {
+  position:fixed;
+  text-align: center;
+  left: 30%;
+  width:30%;
+}
+
+#logo {
+  width: 270px;
+  height: 100px;
+  position:relative; 
+}
+
+#triangledown {
+  width: 120px;
+}
+
+.directory {
+  position:fixed;
+  bottom: 4%;
+  left: 37.2%;
+  width: 10%;
+}
+/* Add some content at the bottom of the video/page */
+.videos{
+  width:100%;
+}
+.content {
+  position: fixed; 
+  float: left;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  left: -5px;
+  width: 45%;
+  height: 100%;
+  padding: 20px;
+}
+
+/*slideshow*/
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/**/
+a:hover span {
+  color: white;
+}
+
+a:hover:before {
+}
+
+
+
+
+/* navbar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #322d33;
+  position:sticky;
+  width: 100%;
+  top:0;
+  z-index: 509;
+}
+
+
+
+.linkillust {
+  color:#322d33;
+  position: relative;
+  float: right;
+  bottom: -11px;
+  left: -20px;
+}
+
+.navline {
+  width: 98%;
+}
+
+.btn {
+  cursor: pointer;
+  outline:white;
+}
+
+/* w3school code */
+.btn:hover {outline:lightgray;
+
+  background-color: lightgray;
+}
+
+
+
+.btn.active {
+  outline:lightgray;
+  background-color: lightgray;
+}
+
+/*more navs */
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top:10px;
+  font-size: 18px;
+}
+
+.topnavtext{
+  padding-top: 20px;
+}
+
+.logohref a:hover{
+  background-color: #322d33;
+  color: #322d33;
+}
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffd096nofukkingcolours;
+  color: #322d33nonononono;
+}
+
+nav{
+  width: 960px;
+  margin: auto;
+  float: left;
+  background-color: white;
+ 
+
+}
+
+/*containers*/
+
+
+.container {
+
+  margin: auto; /*centers the container in the browser window */
+
+  overflow: hidden; /*defines how the container deals with its content – in this case it ensures the container height as a coloured background will be visible if not covered by other elements */
+  background-color: #322d33;
+
+}
+
+/* columns */
+.column {
+  width: 33%;
+  float: left;
+}
+
+
+
+.boximage {
+height: 705px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+.secondspot{
+  text-align: left;
+  position: relative;
+  left:100px;
+}
+/*flex containers from bootstraps*/
+.flex-container {
+  display: flex;
+  background-color: ;
+  flex-flow: row wrap;
+  
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.background-image {
+ width:100%;
+  position: absolute; 
+margin-right: 100px; z-index: -1;
+}
+
+.flex-item {
+  background: linear-gradient(to bottom, );
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.flex-item2 {
+  background: linear-gradient(to bottom, );
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: left;
+}
+
+.flex-text {
+  background: #f1f1f1;
+  width: 680px;
+  margin-top: 0px;
+  color: #322d33;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+margin-bottom: 20px;
+}
+
+.flex-item2 {
+  width: 700px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: left;
+  position: relative;
+  left: 40px;
+}
+
+.flex-item2resume {
+  width: 700px;
+  margin-top: 0px;
+}
+
+.bargif {
+  width:290px;
+  height:550px;
+
+}
+.bar0{
+  height:1px;
+  background: #ffd096 ;width: 35%;
+ 
+}
+.bar {
+  background: #322d33;
+  position: relative;
+  text-align:center;
+  left:35%;
+  height:7px;
+  width:30%;
+}
+.bar1 {
+  height: 26px;
+  background: #322d33;width: 35%;
+  position: left;
+}
+
+.bar2 {
+  height: 26px;
+  background: #322d33;
+  position: left; width: 50%;
+}
+.bar3 {
+  height: 26px;
+  background: #322d33;
+  position: left;width: 70%;
+}
+.bar4 {
+  height: 26px;
+  background: #322d33;
+  position: left;width: 80%;
+}
+
+.bar5 {
+  height: 26px;
+  background: #322d33;
+  position: left;
+  width: 50%;
+}
+
+.bar6 {
+  height: 26px;
+  background: #322d33;
+  position: left;width: 40%;
+}
+
+/* EMAIL FORM*/
+#fcf-form {
+  display:block;
+}
+
+.fcf-body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  padding-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  max-width: 100%;
+}
+
+.fcf-form-group {
+  margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.fcf-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+  border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+  height: auto;
+}
+
+textarea.fcf-form-control {
+  font-family: -apple-system, Arial, sans-serif;
+  height: auto;
+}
+
+label.fcf-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.fcf-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fcf-btn {
+      transition: none;
+  }
+}
+
+.fcf-btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+  width: 100%;
+}
