@@ -15,14 +15,13 @@
  </head>
  <!-- The video -->
  
- <body style="
-  background-color: rgb(234, 237, 239); ">
+ <body>
  
   <header>
     <div class="topnav">
      
-      <a href="Directory.html"> &nbsp  &nbsp  &nbsp  &nbsp <img src="logo.png" style="height:30px; "></a> 
-      &nbsp  &nbsp <a class="active" href="Directory.html">Home</a>
+      <a href="index.html"> &nbsp  &nbsp  &nbsp  &nbsp <img src="logo.png" style="height:30px; "></a> 
+      &nbsp  &nbsp <a class="active" href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
       </div>
@@ -40,14 +39,16 @@
 <div style="margin-left:20px;">
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('life')"> Life Drawings</button>
-  <button class="btn" onclick="filterSelection('creative')"> Creative</button>
-  <a href="Illustration.html" class="linkillust">Illustration</a> 
-  <a href="photography.html" class="linkillust"style="left:-40px;">Photography</a>
-  <a href="Animation.html" class="linkillust"style="left:-63px;">Animation</a>  
-</div>
+  <button class="btn" onclick="filterSelection('life')"> Logos</button>
+  <button class="btn" onclick="filterSelection('creative')"> Aesthetic</button>
+  <a href="photography.html" class="linkillust">Photography</a> 
+  <a href="Animation.html" class="linkillust2">Animation</a> 
+  <a href="graphicdesign.html" class="linkillust3">Graphic</a> 
+  <a href="Web Design.html" class="linkillust4">Web Design</a> 
+
 
 <center><hr class="navline"></center>
+</div>
 
 <div class="row">
   
@@ -59,6 +60,68 @@
     </div>
   </div>
   
+  
+  <div class="column brand">
+    <div class="contenti">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-0.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-4.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-5.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-6.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-7.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-8.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-9.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-10.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-11.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="fashionfest wsu/brand boo western sydney fashion-images-12.jpg" style="width:100%">
+        </div>
+        <h4> <span class="brsmallest"></span>Fashion Festival</h4>
+      <p>Brand book for fashion festival</p>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      </div>
+    </div>
   
   <div class="column logos">
     <div class="contenti">
@@ -134,5 +197,26 @@ integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n
 crossorigin="anonymous"></script>
  <!-- Main JS -->
  <script src="js/main.js"></script>
+ <script>
+  let slideIndex = [1,1];
+  let slideId = ["mySlides1", "mySlides2",]
+  showSlides(1, 0);
+  showSlides(1, 1);
+  
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+  
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+  }
+  </script>
  </body>
 </html>

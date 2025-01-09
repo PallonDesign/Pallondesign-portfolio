@@ -94,6 +94,7 @@
 }
 body {
   overflow-x: hidden;
+  position: relative;
 }
 /*prtfolio*/
 .selfie {
@@ -107,9 +108,14 @@ body {
 .aboutme {
   background-color: #ffd096;
 }
-
+.pallon {
+  up:-30px;
+}
+.services {
+  font-size:24px; 
+  word-break: keep-all;
+}
 .nowrap {
-  white-space: nowrap;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -245,8 +251,8 @@ body {
 }
 h1 {
   font-size: 80px;
-  word-break: break-all;  f
-  ont-family: "Dosis", serif;
+  word-break: break-all;  
+  font-family: "Dosis", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -323,6 +329,7 @@ h1 {
 .contenti {
   background-color: rgb(255, 255, 255);
   padding: 10px;
+  
 }
 
 .show {
@@ -504,6 +511,7 @@ img {vertical-align: middle;}
   padding: 16px;
   margin-top: -22px;
   color: white;
+  background-color: rgb(157, 157, 157, 0.5);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -544,19 +552,97 @@ a:hover:before {
   z-index: 509;
 }
 
-
-
 .linkillust {
   color:#322d33;
   position: relative;
   float: right;
   bottom: -11px;
-  left: -20px;
+  left: -28px;
 }
+
+.linkillust2 {
+  color:#322d33;
+  position: relative;
+  float: right;
+  bottom: -11px;
+  left: -60px;
+}
+.linkillust3 {
+  color:#322d33;
+  position: relative;
+  float: right;
+  bottom: -11px;
+  left: -83px;
+}
+
+.linkillust4 {
+  color:#322d33;
+  position: relative;
+  float: right;
+  bottom: -11px;
+  left: -103px;
+}
+
+
+.leftnavresume {
+  left:30px; position: relative;
+}
+
 
 .navline {
   width: 98%;
 }
+/*phone functions */
+
+@media all and (min-width:0px) and (max-width: 500px) {
+  /* put your css styles in here */
+  .services {
+    font-size:21px;
+  }
+  .firstservice{
+    position:relative;
+    bottom:20px;
+    right:10px;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+  .linkillust {
+    top:45px;
+    left:-300px;
+  }
+  .linkillust2 {
+    top:45px;
+    left:-140px;
+  }  
+  .linkillust3 {
+    top:7px;
+    left:-80px;
+  }
+  
+  .linkillust4 {
+    top:7px;
+    left:-90px;
+  }
+  .navline {
+    position:relative;
+    top:20px;
+  }
+  .nowrap {
+    font-size:20px;
+  }  
+.leftnavresume {
+  position: relative;
+  left:0px;
+}
+
+.leftnavresume {
+  position: relative;
+  left:0px;
+}
+}
+
 
 .btn {
   cursor: pointer;
@@ -631,11 +717,13 @@ nav{
 
 /* columns */
 .column {
-  width: 33%;
+  width: 376px;
   float: left;
 }
 
+.firstservice{
 
+}
 
 .boximage {
 height: 705px;
