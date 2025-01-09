@@ -614,7 +614,7 @@ a:hover:before {
 .aboutjustin {
   bottom:30px; position:relative; margin:10px;
 }
-}
+
 .row {
   margin:  2px;
 }
@@ -671,6 +671,7 @@ a:hover:before {
   left:0px;
 }
 }
+
 
 
 .btn {
@@ -746,7 +747,7 @@ nav{
 
 /* columns */
 .column {
-  width: 500px;
+  width: 480px;
   float: left;
 }
 
