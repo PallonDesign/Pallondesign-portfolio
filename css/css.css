@@ -106,7 +106,7 @@ body {
   top: 0px;
 }
 .aboutme {
-  background-color: #ffd096;
+  background-color: #322D33;
 }
 .aboutjustin {
   bottom:30px; position:relative; margin:20px;
@@ -724,7 +724,7 @@ a:hover:before {
 }
 
 .topnav a.active {
-  background-color: #ffd096nofukkingcolours;
+  background-color: #322D33nofukkingcolours;
   color: #322d33nonononono;
 }
 
@@ -837,7 +837,7 @@ margin-bottom: 20px;
 }
 .bar0{
   height:1px;
-  background: #ffd096 ;width: 35%;
+  background: #322D33 ;width: 35%;
  
 }
 .bar {
