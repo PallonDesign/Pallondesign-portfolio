@@ -245,6 +245,10 @@ body {
   color:#212529;
 }
 
+.whitetext {
+  color:white;
+}
+
 /* Center website */
 .main {
   max-width: 1000px;
