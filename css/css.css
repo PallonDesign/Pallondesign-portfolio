@@ -847,16 +847,10 @@ margin-bottom: 20px;
 }
 .bar0{
   height:1px;
-  background: white;
-  background-color: white;
-  color: white;
   width: 35%;
  
 }
 .bar {
-  background: white;
-  background-color: white;
-  color: white;
   position: relative;
   text-align:center;
   left:35%;
@@ -865,55 +859,31 @@ margin-bottom: 20px;
 }
 .bar1 {
   height: 26px;
-  background: white;
-  background-color: white;
-  color: white;
-  background: #322d33;
   width: 35%;
   position: left;
 }
 
 .bar2 {
   height: 26px;
-  background: white;
-  background-color: white;
-  color: white;
-  background: #322d33;
   position: left; width: 50%;
 }
 .bar3 {
   height: 26px;
-  background: white;
-  background-color: white;
-  color: white;
-  background: #322d33;
   position: left;width: 70%;
 }
 .bar4 {
   height: 26px;
-  background: white;
-  background-color: white;
-  color: white;
-  background: #322d33;
   position: left;width: 80%;
 }
 
 .bar5 {
   height: 26px;
-  background: white;
-  background-color: white;
-  color: white;
-  background: #322d33;
   position: left;
   width: 50%;
 }
 
 .bar6 {
   height: 26px;
-  background: white;
-  background-color: white;
-  color: white;
-  background: #322d33;
   position: left;width: 40%;
 }
 
