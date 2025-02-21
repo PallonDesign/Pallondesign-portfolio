@@ -841,7 +841,10 @@ margin-bottom: 20px;
 }
 .bar0{
   height:1px;
-  background: white ;width: 35%;
+  background: white;
+  background-color: white;
+  color: white;
+  width: 35%;
  
 }
 .bar {
