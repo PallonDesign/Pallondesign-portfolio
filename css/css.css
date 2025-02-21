@@ -841,11 +841,11 @@ margin-bottom: 20px;
 }
 .bar0{
   height:1px;
-  background: #322D33 ;width: 35%;
+  background: white ;width: 35%;
  
 }
 .bar {
-  background: #322d33;
+  background: white;
   position: relative;
   text-align:center;
   left:35%;
