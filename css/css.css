@@ -416,6 +416,15 @@ color: black;
 
 }
 
+hrwhite {
+height:5px;
+width: 50%;
+background-color: white;
+color: white;
+
+
+}
+
 
 .courier { 
   font-family: 'Courier New', Courier, monospace;;
